@@ -62,3 +62,28 @@ links[2].textContent = siteContent["nav"]["nav-item-3"];
 links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let mainHead = document.getElementsByTagName('h1');
+mainHead[0].textContent = siteContent['cta']['h1'];
+
+let clicker = document.getElementsByTagName('button');
+clicker[0].textContent = siteContent['cta']['button'];
+
+let smallHeaders = document.getElementsByTagName('h4');
+smallHeaders[0].textContent = siteContent['main-content']['features-h4'];
+smallHeaders[1].textContent = siteContent['main-content']['about-h4'];
+smallHeaders[2].textContent = siteContent['main-content']['services-h4'];
+smallHeaders[3].textContent = siteContent['main-content']['product-h4'];
+smallHeaders[4].textContent = siteContent['main-content']['vision-h4'];
+smallHeaders[5].textContent = siteContent['contact']['contact-h4'];
+
+let paragraphs = document.getElementsByTagName('p');
+paragraphs[0].textContent = siteContent['main-content']['features-content'];
+paragraphs[1].textContent = siteContent['main-content']['about-content'];
+paragraphs[2].textContent = siteContent['main-content']['services-content'];
+paragraphs[3].textContent = siteContent['main-content']['product-content'];
+paragraphs[4].textContent = siteContent['main-content']['vision-content'];
+paragraphs[5].textContent = siteContent['contact']['address'];
+paragraphs[6].textContent = siteContent['contact']['phone'];
+paragraphs[7].textContent = siteContent['contact']['email'];
+paragraphs[8].textContent = siteContent['footer']['copyright'];
