@@ -62,12 +62,21 @@ links[2].textContent = siteContent["nav"]["nav-item-3"];
 links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
+//links[0].textContent = 'Services';
+//links[1].textContent = 'Product';
+//links[2].textContent = 'Vision';
+//links[3].textContent = 'Features';
+//links[4].textContent = 'About';
+//links[5].textContent = 'Contact';
 
 let mainHead = document.getElementsByTagName('h1');
 mainHead[0].textContent = siteContent['cta']['h1'];
+//mainHead[0].textContent = 'DOM Is Awesome';
+mainHead[0].innerHTML = 'DOM<br> Is<br> Awesome';
 
 let clicker = document.getElementsByTagName('button');
 clicker[0].textContent = siteContent['cta']['button'];
+//clicker[0].textContent = 'Get Started';
 
 let smallHeaders = document.getElementsByTagName('h4');
 smallHeaders[0].textContent = siteContent['main-content']['features-h4'];
@@ -84,6 +93,25 @@ paragraphs[2].textContent = siteContent['main-content']['services-content'];
 paragraphs[3].textContent = siteContent['main-content']['product-content'];
 paragraphs[4].textContent = siteContent['main-content']['vision-content'];
 paragraphs[5].textContent = siteContent['contact']['address'];
+paragraphs[5].innerHTML = '123 Way 456 Street<br> Somewhere, USA';
 paragraphs[6].textContent = siteContent['contact']['phone'];
 paragraphs[7].textContent = siteContent['contact']['email'];
 paragraphs[8].textContent = siteContent['footer']['copyright'];
+
+//Changed nav to green
+let navColor = document.querySelectorAll('a');
+navColor.forEach(link => link.style.color = 'green');
+
+//Created two new navs
+let first = document.createElement('a');
+let last = document.createElement('a');
+let navLinks = document.querySelector('nav');
+
+first.textContent = 'Welcome';
+last.textContent = 'Bye';
+
+first.style.color = 'green';
+last.style.color = 'green';
+
+navLinks.append(last);
+navLinks.prepend(first);
